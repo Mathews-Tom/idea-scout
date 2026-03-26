@@ -1,0 +1,31 @@
+spec_version: "0.1.0"
+name: idea-scout
+version: "1.0.0"
+description: >
+  Business idea validation pipeline — orchestrates parallel market research, competitive analysis,
+  and feasibility assessment to produce a scored report with GO/CAUTION/NO-GO verdict.
+license: MIT
+
+model:
+  preferred: claude-opus-4-6
+  fallback:
+    - claude-sonnet-4-5-20250929
+    - claude-haiku-3-5-20241022
+  constraints:
+    temperature: 0.4
+    max_tokens: 16384
+
+skills: []
+
+runtime:
+  max_turns: 50
+  timeout: 600
+
+tags:
+  - validation
+  - lean-canvas
+  - market-research
+  - competitive-analysis
+  - feasibility
+  - startup
+  - business
